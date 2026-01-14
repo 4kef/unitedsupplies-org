@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products | Luxe Pools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body style="background-color: var(--light-bg);">
+
+    <!-- Navigation -->
+    <header style="background: var(--primary-color); position: relative;">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">LUXE POOLS</a>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#showcase">Projects</a>
+                    <a href="index.html#about">About</a>
+                    <a href="products.html" class="active" style="color: var(--gold);">Products</a>
+                    <a href="https://wa.me/919981425205" class="btn btn-primary"
+                        style="background: var(--gold); color: var(--primary-color);">Contact Us</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container" style="padding: 60px 20px;">
+        <h1 style="text-align: center; margin-bottom: 40px; font-size: 3rem;">Premium Pool Products</h1>
+
+        <div class="products-grid"
+            style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px;">
+
+            <!-- Filter System -->
+            <div class="product-card"
+                style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
+                <div
+                    style="height: 250px; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #f9f9f9;">
+                    <img src="assets/images/product_filter.png" alt="Sand Filter System"
+                        style="max-height: 90%; max-width: 90%;">
+                </div>
+                <div style="padding: 25px;">
+                    <h3 style="margin-bottom: 10px; font-size: 1.4rem;">Pro-Clear Sand Filter System</h3>
+                    <p style="color: #666; margin-bottom: 20px; font-size: 0.95rem;">High-performance filtration for
+                        crystal clear water. Suitable for pools up to 50,000 liters.</p>
+                    <button onclick="getQuotation('Pro-Clear Sand Filter System')" class="btn btn-primary"
+                        style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                        <i class="fa-brands fa-whatsapp"></i> Get Quotation
+                    </button>
+                </div>
+            </div>
+
+            <!-- Chlorine -->
+            <div class="product-card"
+                style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
+                <div
+                    style="height: 250px; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #f9f9f9;">
+                    <!-- Fallback image or generated one if available (using placeholder logic in JS if missing, effectively) -->
+                    <!-- We will use a placeholder from font awesome if image missing or just text -->
+                    <div style="text-align: center; color: #ccc;">
+                        <i class="fa-solid fa-bottle-droplet" style="font-size: 4rem;"></i>
+                    </div>
+                </div>
+                <div style="padding: 25px;">
+                    <h3 style="margin-bottom: 10px; font-size: 1.4rem;">Premium Chlorine Tablets</h3>
+                    <p style="color: #666; margin-bottom: 20px; font-size: 0.95rem;">Slow-dissolving stabilized chlorine
+                        tablets for long-lasting sanitation.</p>
+                    <button onclick="getQuotation('Premium Chlorine Tablets')" class="btn btn-primary"
+                        style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                        <i class="fa-brands fa-whatsapp"></i> Get Quotation
+                    </button>
+                </div>
+            </div>
+
+            <!-- Pump -->
+            <div class="product-card"
+                style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
+                <div
+                    style="height: 250px; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #f9f9f9;">
+                    <div style="text-align: center; color: #ccc;">
+                        <i class="fa-solid fa-gears" style="font-size: 4rem;"></i>
+                    </div>
+                </div>
+                <div style="padding: 25px;">
+                    <h3 style="margin-bottom: 10px; font-size: 1.4rem;">High-Efficiency Pump</h3>
+                    <p style="color: #666; margin-bottom: 20px; font-size: 0.95rem;">Energy-saving variable speed pump.
+                        Quiet operation and durable build.</p>
+                    <button onclick="getQuotation('High-Efficiency Pump')" class="btn btn-primary"
+                        style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                        <i class="fa-brands fa-whatsapp"></i> Get Quotation
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+        style="background-color: var(--primary-color); color: white; padding: 50px 0; text-align: center; margin-top: 50px;">
+        <div class="container">
+            <p style="color: #aaa; font-size: 0.9rem;">&copy; 2026 Luxe Pools. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
