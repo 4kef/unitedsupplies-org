@@ -23,6 +23,8 @@ body {
     background-color: #ffffff;
     line-height: 1.6;
     overflow-x: hidden;
+    padding-top: 90px;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -76,12 +78,24 @@ a {
 }
 
 /* Header */
+/* ===== Premium Sticky Header ===== */
 header {
-    padding: 20px 0;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    z-index: 100;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.7), transparent);
+    z-index: 1000;
+
+    padding: 18px 0;
+
+    background: rgba(13, 37, 63, 0.35);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    transition:
+        background 0.3s ease,
+        box-shadow 0.3s ease,
+        padding 0.3s ease;
 }
 
 nav {
@@ -115,9 +129,49 @@ nav {
     color: var(--gold);
 }
 
-/* Responsive */
+/* ===== Mobile Hamburger Menu ===== */
+
+/* Menu button */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+/* Mobile styles */
 @media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
     .nav-links {
         display: none;
+        flex-direction: column;
+        width: 100%;
+        background: var(--primary-color);
+        margin-top: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 12px 0;
+        text-align: center;
     }
 }
+/* Solid header for products page */
+.products-header {
+    background: var(--primary-color);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
